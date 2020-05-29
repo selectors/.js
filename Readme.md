@@ -6,7 +6,9 @@ Split and parse CSS selectors.
 
 ## Motivation
 
-This library exists as the backbone of [selectors.io](https://selectors.io). Rather than siloing the code within the website itself, it made sense to share it with a wider audience.
+This library exists as the backbone of [selectors.io](https://selectors.io)<sup>†</sup>. Rather than siloing the code within the website itself, it made sense to share it with a wider audience.
+
+† If [selectors.io](https://selectors.io) currently redirects to this readme, the new website is not yet ready. The old website can still be accessed at [http://selectors.github.io/selectors.io/](http://selectors.github.io/selectors.io) but its functionality may be a bit limited.
 
 ### What happened to the old library?
 
