@@ -1,6 +1,6 @@
 # Selectors.js
 
-[![Build Status](https://travis-ci.org/selectors/.js.svg?branch=master)](https://travis-ci.org/selectors/.js)
+[![Build Status](https://travis-ci.org/selectors/.js.svg?branch=master)](https://travis-ci.org/selectors/.js) ![Dev Dependencies](https://img.shields.io/david/dev/selectors/.js)
 
 Split and parse CSS selectors.
 
