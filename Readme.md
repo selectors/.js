@@ -1,5 +1,7 @@
 # Selectors.js
 
+[![Build Status](https://travis-ci.org/selectors/.js.svg?branch=master)](https://travis-ci.org/selectors/.js)
+
 Split and parse CSS selectors.
 
 🚧 **This is a work in progress and is currently in a very early stage of development.**
