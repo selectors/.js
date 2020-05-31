@@ -17,7 +17,7 @@
  * TODO: Maybe convert this to a cURL-based approach?
  */
 
-export default {
+const types = {
   universal: {
     description: 'any element',
     doc: 'https://www.w3.org/TR/selectors-4/#the-universal-selector',
@@ -475,3 +475,55 @@ export default {
     pattern: `E:nth-last-col(n)`,
   }
 }
+
+/**
+ * This is a mapping between pseudo class names and their type definitions above.
+ */
+export const pseudoClassTypeMap = {
+  not: types.negation,
+  is: types.matchesAny,
+  where: types.specificityAdjustment,
+  has: types.relational,
+  dir: types.directionality,
+  language: types.lang,
+  'any-link': types.hyperlink,
+  link: types.hyperlinkUnvisited,
+  visited: types.hyperlinkVisited,
+  'local-link': types.hyperlinkCurrent,
+  target: types.target,
+  'target-within': types.targetContainer,
+  scope: types.reference,
+  current: types.timeCurrent,
+  'current()': types.timeCurrentDeepest,
+  past: types.timePast,
+  future: types.timeFuture,
+  active: types.active,
+  hover: types.hover,
+  focus: types.focus,
+  'focus-within': types.focusWithin,
+  'focus-visible': types.focusVisible,
+  enabled: types.enabledDisabled,
+  disabled: types.enabledDisabled,
+  'read-write': types.mutability,
+  'read-only': types.mutability,
+  'placeholder-shown': types.placeholderShown,
+  default: types.default,
+  checked: types.checked,
+  indeterminate: types.indeterminate,
+  valid: types.validity,
+  invalid: types.validity,
+  'in-range': types.range,
+  'out-of-range': types.range,
+  required: types.optionality,
+  optional: types.optionality,
+  blank: types.blank,
+  'user-invalid': types.invalid,
+  root: types.treeRoot,
+  empty: types.empty,
+  'nth-child': types.childNth,
+  'nth-last-child': types.childNthLast,
+  'first-child': types.childFirst,
+  'last-child': types.childLast,
+};
+
+export default types;
